@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5190BEB1528CE6F0021397A /* AlbumArt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5190BEA1528CE6F0021397A /* AlbumArt@2x.png */; };
 		D58480D6150D72EC007B2CD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58480D5150D72EC007B2CD7 /* UIKit.framework */; };
 		D58480D8150D72EC007B2CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58480D7150D72EC007B2CD7 /* Foundation.framework */; };
 		D58480DA150D72EC007B2CD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58480D9150D72EC007B2CD7 /* CoreGraphics.framework */; };
@@ -20,6 +21,8 @@
 		D58480F6150D72ED007B2CD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58480D7150D72EC007B2CD7 /* Foundation.framework */; };
 		D58480FE150D72ED007B2CD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D58480FC150D72ED007B2CD7 /* InfoPlist.strings */; };
 		D5848101150D72ED007B2CD7 /* LockScreenInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5848100150D72ED007B2CD7 /* LockScreenInfoTests.m */; };
+		D5848123150D7603007B2CD7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5848122150D7603007B2CD7 /* MediaPlayer.framework */; };
+		D5848124150D7612007B2CD7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5848114150D75D0007B2CD7 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,25 +36,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5190BEA1528CE6F0021397A /* AlbumArt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumArt@2x.png"; sourceTree = "<group>"; };
 		D58480D1150D72EC007B2CD7 /* LockScreenInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockScreenInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58480D5150D72EC007B2CD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D58480D7150D72EC007B2CD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D58480D9150D72EC007B2CD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D58480DD150D72EC007B2CD7 /* LockScreenInfo-Info.plist */ = {isa = PBXFileReference; path = "LockScreenInfo-Info.plist"; sourceTree = "<group>"; };
+		D58480DD150D72EC007B2CD7 /* LockScreenInfo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LockScreenInfo-Info.plist"; sourceTree = "<group>"; };
 		D58480DF150D72EC007B2CD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D58480E1150D72EC007B2CD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D58480E3150D72EC007B2CD7 /* LockScreenInfo-Prefix.pch */ = {isa = PBXFileReference; path = "LockScreenInfo-Prefix.pch"; sourceTree = "<group>"; };
-		D58480E4150D72EC007B2CD7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D58480E3150D72EC007B2CD7 /* LockScreenInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LockScreenInfo-Prefix.pch"; sourceTree = "<group>"; };
+		D58480E4150D72EC007B2CD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D58480E5150D72EC007B2CD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D58480E7150D72EC007B2CD7 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		D58480E7150D72EC007B2CD7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D58480E8150D72ED007B2CD7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D58480EB150D72ED007B2CD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		D58480F2150D72ED007B2CD7 /* LockScreenInfoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockScreenInfoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58480F3150D72ED007B2CD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D58480FB150D72ED007B2CD7 /* LockScreenInfoTests-Info.plist */ = {isa = PBXFileReference; path = "LockScreenInfoTests-Info.plist"; sourceTree = "<group>"; };
+		D58480FB150D72ED007B2CD7 /* LockScreenInfoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LockScreenInfoTests-Info.plist"; sourceTree = "<group>"; };
 		D58480FD150D72ED007B2CD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D58480FF150D72ED007B2CD7 /* LockScreenInfoTests.h */ = {isa = PBXFileReference; path = LockScreenInfoTests.h; sourceTree = "<group>"; };
+		D58480FF150D72ED007B2CD7 /* LockScreenInfoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockScreenInfoTests.h; sourceTree = "<group>"; };
 		D5848100150D72ED007B2CD7 /* LockScreenInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockScreenInfoTests.m; sourceTree = "<group>"; };
+		D5848114150D75D0007B2CD7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D5848122150D7603007B2CD7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5848124150D7612007B2CD7 /* AVFoundation.framework in Frameworks */,
+				D5848123150D7603007B2CD7 /* MediaPlayer.framework in Frameworks */,
 				D58480D6150D72EC007B2CD7 /* UIKit.framework in Frameworks */,
 				D58480D8150D72EC007B2CD7 /* Foundation.framework in Frameworks */,
 				D58480DA150D72EC007B2CD7 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +108,8 @@
 		D58480D4150D72EC007B2CD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5848122150D7603007B2CD7 /* MediaPlayer.framework */,
+				D5848114150D75D0007B2CD7 /* AVFoundation.framework */,
 				D58480D5150D72EC007B2CD7 /* UIKit.framework */,
 				D58480D7150D72EC007B2CD7 /* Foundation.framework */,
 				D58480D9150D72EC007B2CD7 /* CoreGraphics.framework */,
@@ -124,6 +134,7 @@
 		D58480DC150D72EC007B2CD7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D5190BEA1528CE6F0021397A /* AlbumArt@2x.png */,
 				D58480DD150D72EC007B2CD7 /* LockScreenInfo-Info.plist */,
 				D58480DE150D72EC007B2CD7 /* InfoPlist.strings */,
 				D58480E1150D72EC007B2CD7 /* main.m */,
@@ -224,6 +235,7 @@
 			files = (
 				D58480E0150D72EC007B2CD7 /* InfoPlist.strings in Resources */,
 				D58480EC150D72ED007B2CD7 /* ViewController.xib in Resources */,
+				D5190BEB1528CE6F0021397A /* AlbumArt@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +442,7 @@
 				D5848106150D72ED007B2CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5848107150D72ED007B2CD7 /* Build configuration list for PBXNativeTarget "LockScreenInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +451,7 @@
 				D5848109150D72ED007B2CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
